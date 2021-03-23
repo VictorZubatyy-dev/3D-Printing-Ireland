@@ -1,1 +1,0 @@
-# victorzubatyy.github.io
