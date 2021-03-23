@@ -1,1 +1,193 @@
-# victorzubatyy.github.io
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Providing you with affordable and high quality 3D-Printers, 3D-Printer materials and 3D-Printing Services">
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <script src="js/script.js" defer></script>
+  <title>3D Printing Ireland: Specialising in 3D-Printers, 3D-Printing & 3D-Printer materials, Dublin, Ireland</title>
+</head>
+
+<body id="container" onload="incrementCount(10)">
+  <header id="banner">
+    <img class="logo" src="images/logo.png" alt="3D-Printing Ireland company logo">
+    <h1 class="montserrat"> 3D Printing Ireland</h1>
+  </header>
+
+  <!--The <nav> element has a <ul> tag, <li> tags and <a> tags. The tags are as follows:
+1.	<ul class = “center”> - an unordered list is created and is centered using the .center class e.g Home, 3D Printers etc.
+2.	<li> - used to create list items e.g Home, 3D Printers etc.
+3.	<a href= “"> – used to link pages within the website e.g 3D Printers is 3dprinters.html
+-->
+
+  <!--navigation-->
+  <nav id="mainmenu">
+    <ul class="center">
+      <li><a href="index.html">HOME</a></li>
+      <li><a href="3dprinters.html">3D PRINTERS</a></li>
+      <li><a href="contact.html">CONTACT</a></li>
+      <li><a href="about.html">ABOUT</a></li>
+    </ul>
+  </nav>
+
+  <div class="background-image center">
+    <h2 class="bigshoulders">Welcome to 3D Printing Ireland.</h2>
+    <img src="images/backgroundimage.jpg" alt="3D-Printer in 3D-Printing Ireland" />
+  </div>
+
+  <main id="bodycontainer">
+    <div class="inspire red-underline">
+      <h2 class=" montserrat welcome center">Make something to make a difference.</h2>
+    </div>
+
+    <iframe src="https://www.youtube.com/embed/Cl8ijPGEKO8"
+      title="How 3-D Printed Prosthetic Hands Are Changing These Kids’ Lives"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+    </iframe>
+
+    <div class="row">
+      <div class="column column50">
+        <img class="icon-help" src="images/help.png" alt="Help logo, question mark" />
+        <h3 class="center">Why choose us?</h3>
+        <p>
+          Are you looking to develop a concept model in Ireland? Are you sick
+          and tires of having to consider the financia impact it will cause?
+          You have come to the right spot!
+        </p>
+      </div>
+
+      <div class="column column50">
+        <img class="icon-trust" src="images/trust.png" alt="Trust us logo, hand with heart above it" />
+        <h3 class="center">Reviews from our customers</h3>
+        <p class="italic">
+          Exceptional 3D Printing Services. Got 4 of their face shields on
+          Wednesday, they are so well made and comfortable. This will help us
+          open safely next week . Thank you 3D Printing Ireland.
+          <strong> - Mary Jane</strong>
+        </p>
+      </div>
+    </div>
+
+    <div class="row showheader">
+      <div class="column column50">
+        <h2 class="montserrat center">3D-Models</h2>
+        <!--slideshow-->
+        <div class="slideshow-container">
+          <div class="mySlides fade">
+            <img src="images/3dmodel1.jpg" alt="3D-Printing Ireland 3D-Printer Model 1" />
+          </div>
+
+          <div class="mySlides fade">
+            <img src="images/3dmodel2.jpg" alt="3D-Printing Ireland 3D-Printer Model 2" />
+          </div>
+
+          <div class="mySlides fade">
+            <img src="images/3dmodel3.jpg" alt="3D-Printing Ireland 3D-Printer Model 3" />
+          </div>
+
+          <div class="center">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="column column50">
+        <h3 class="roboto center">Use of 3D-Models</h3>
+        <p>
+          3D printing, also known as additive manufacturing, creates
+          three-dimensional components from CAD models. It mimics the
+          biological process, adding material layer by layer to create a
+          physical part. With 3D printing, you can produce functional shapes,
+          all while using less material than traditional manufacturing
+          methods.
+        </p>
+        <a href="3dprinters.html" class="button montserrat"> Shop</a>
+      </div>
+    </div>
+
+
+    <div class="row background-color">
+      <div class="column column50">
+        <!--newsletter-->
+        <div class="newsletter-text">
+          <h2 class="roboto">Newsletter</h2>
+          <p>Subsribe to our newsletter to recieve the latest news on our products and promotions!</p>
+        </div>
+      </div>
+
+      <div class="column column50">
+        <div class="newsletter-input">
+          <form id="newsletter-form" name="myForm" action="/action_page.php" onsubmit="return validateForm()"
+            method="post">
+            <input class="email" type="text" placeholder="Email address" name="e-mail" id="e-mail">
+            <input class="subscribe-button montserrat" type="submit" value="Subscribe">
+            <label class="newsletter-label">
+              Daily newsletter
+              <input class="checkbox" type="checkbox" checked="checked" name="subscribe">
+            </label>
+          </form>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="row">
+      <div class="column column-30">
+        <img src="images/logo1.png" alt="3D-Printing Ireland company logo">
+        <p>3D Printing Ireland &#169; 2021</p>
+      </div>
+
+      <div class="column column17-5">
+        <!--specific footer navigation links-->
+        <ul id="submenu">
+          <li class="montserrat list-heading">Menu</li>
+          <li class="list-subheading"><a href="index.html">Home</a></li>
+          <li class="list-subheading"><a href="3dprinters.html">3D-Printers</a></li>
+          <li class="list-subheading"><a href="contact.html">Contact</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </div>
+
+
+      <div class="column column17-5">
+        <ul>
+          <li class="montserrat list-heading">Company</li>
+          <li><a href="about.html">The Company</a></li>
+        </ul>
+      </div>
+
+      <div class="column column17-5">
+        <ul>
+          <li class="montserrat list-heading">Discover</li>
+          <li><a href="about.html">Brand Motto</a></li>
+        </ul>
+      </div>
+
+      <div class="column column17-5">
+        <ul>
+          <li class="montserrat list-heading">Find Us On</li>
+          <li class="list-subheading">Twitter</li>
+          <li class="list-subheading">Facebook</li>
+          <li class="list-subheading">Instagram</li>
+        </ul>
+      </div>
+      <!--red underline-->
+      <div class="underline-footer">
+      </div>
+      <!--hit counter-->
+      <div class="main-container  " id="id_main_container">
+        <div class="container_inner" id="display_div_id">
+        </div>
+      </div>
+
+    </div>
+  </footer>
+</body>
+
+</html>
