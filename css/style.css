@@ -1,0 +1,964 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@400;700&display=swap');
+
+* {box-sizing: border-box;} /*allows us to set custom height/width on element*/
+
+
+header, section, footer, aside, nav, main, article, figure, iframe, img, table,form, button, input
+{
+    display: block; /*these elements are selected to make sure to display in older versions of browers*/
+}
+
+/*fonts*/
+.roboto 
+{
+font-family: 'Roboto Slab', serif;
+}
+
+.montserrat
+{
+font-family: 'Montserrat', sans-serif;
+}
+
+.bigshoulders
+{
+font-family: 'Big Shoulders Display', cursive;
+}
+
+/*each page has container for whole body*/
+#container 
+{
+background-color: #f1faee;
+margin: auto;
+}
+
+/*each page has container for main element*/
+#bodycontainer
+{
+margin: 5em auto;
+margin-bottom: 0;
+}
+
+#bodycontainer-about-us
+{
+margin: 5em 20em;
+}
+
+header
+{
+  color: #F1FAEE;
+  background-color: #1D3557;
+  padding: 1em;
+}
+
+header h1
+{  
+
+font-size: 5rem;
+/*virtual width resizes with the size of the window*/
+font-family: "Arial", Times, serif;
+
+}
+
+/*company logo styling*/
+.logo
+{
+width: 8vw;
+}
+
+/*video styling*/
+iframe
+{
+width: 80%;
+height: 50vh; 
+border: none;
+margin: 3em auto;
+}
+
+img
+{
+width: 100%;
+}
+
+body 
+{
+font-family: Arial, Helvetica, sans-serif;
+}
+
+iframe
+{
+border: 0;
+}
+
+/*PDF link styling*/
+.pdf a
+{
+text-decoration: none;
+}
+
+.pdf a:hover
+{
+color: #ff0000;
+text-decoration: underline;
+}
+
+h3 a
+{
+color: black;
+text-decoration: none;
+}
+
+/*footer link styling*/
+.column17-5 li a {
+width: 17.5%;
+color: white;
+text-decoration: none;
+}
+
+/*3dprinters, checkout and order confirmed pages links styling*/
+h3 a:hover
+{
+color: red;
+text-decoration: underline;
+}
+
+h4 a:link
+{
+color: black;
+text-decoration: none;
+}
+
+h4 a:visited
+{
+text-decoration: underline;
+}
+
+h4 a:hover
+{
+color: red;
+text-decoration: underline;
+}
+
+/*checkout image styling*/
+.checkout-img
+{
+margin: 0 auto;
+height: 60vh;
+width: 40vw;
+}
+
+/*receipt message on orderconfirmed page*/
+.text-underline
+{
+text-decoration: underline;
+}
+
+
+/*hit counter styling*/
+/*Reference - https://www.codementor.io/@jamesezechukwu/how-to-create-a-simple-counter-using-javascript-html-css-bxcjgbbxa*/
+.main_container 
+{
+height: 46px;
+padding: 2px;
+background-color: #555555;
+}
+.container_inner 
+{
+border: none;
+vertical-align: center;
+padding-top: 12px;
+padding-left: 10px;
+width:10vw;
+margin: 0 auto;
+}
+
+.num_tiles
+{
+width:30px;
+height: 30px;
+background-color: #457B9D;
+color: #ffffff;
+font-size: 1.1em;
+text-align: center;
+padding: 0;
+font-family: verdana;
+}
+
+/*home page icon styling*/
+.icon-help
+{
+width: 4vw;
+margin: 0 auto; /*center the element within the div*/
+}
+
+.icon-trust
+{
+width: 4vw;
+margin: 0 auto;
+}
+
+.icon-safety
+{
+width: 10vw;
+margin: 0 auto;
+}
+
+/*heading styling for 3d-printers, contact, about, checkout and orderconfirmed pages*/
+.underline
+{
+margin: 0 auto;
+background-color:  #E63946;
+width: 20vw;
+height: 0.5vh;
+}
+
+
+
+/*shop button styling*/
+.button
+{
+font-size: 1.2rem;
+background-color: #E63946;
+border-radius: 2em;
+border: none;
+padding: 1.1em 1em;
+color: #F1FAEE;
+margin-top: 3em;
+width: 25%;
+transition-duration: 0.4s;
+text-align: center;
+text-decoration: none;
+margin: 0 auto;
+display: block;
+}
+
+.button:hover
+{
+background-color: #c4212e;
+}
+
+/*order button stylinh*/
+.order-button
+{
+font-size: 1.2rem;
+background-color: #E63946;
+border-radius: 2em;
+border: none;
+padding: 1.1em 1em;
+color: #F1FAEE;
+margin-top: 3em;
+width: 10%;
+transition-duration: 0.4s;
+text-align: center;
+text-decoration: none;
+margin: 0 auto;
+display: block;
+}
+
+.order-button:hover
+{
+background-color: #c4212e;
+}
+
+/*logo adjustment within the header using flex*/
+#banner
+{
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+/*3d-printer image styling home page*/
+.background-image img
+{
+width:100%;
+max-height:80vh;
+object-fit: cover;
+object-position: center;
+}
+
+.background-image h2 
+{
+width:100%;
+position: absolute;
+color: #F1FAEE;
+font-size: 4em;
+margin: 40vh auto;
+}
+
+/*quote styling*/
+
+.inspire
+{
+font-size: 1.5em;
+}
+
+.inspire h2
+{
+color: #1D3557;
+font-size: 2em;
+}
+
+.welcome::first-letter
+{
+color: #E63946;
+}
+
+
+.italic
+{
+font-style: italic;
+}
+
+#bodycontainer  h3, p     /*all h3 and paragraphs are 1.5em in font-size*/ 
+{
+font-size: 1.5em;
+}
+
+.column, .column50, p
+{
+padding:1.1em;
+}
+
+
+
+/* Slideshow styling */
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+.slideshow-container 
+{
+position: relative;
+text-align: center;
+margin: auto;
+max-width: 100%;
+}
+
+/* The dots/bullets/indicators */
+.dot 
+{
+height: 15px;
+width: 15px;
+margin: 1% 1% 0 0;
+background-color: #bbbbbb;
+border-radius: 30%;
+display: inline-block;
+transition: background-color 0.6s ease;
+}
+
+.center
+{
+text-align: center;
+}
+
+.active
+{
+background-color: #717171;
+}
+
+/* Fading animation */
+.fade 
+{
+-webkit-animation-name: fade;
+-webkit-animation-duration: 1.5s;
+animation-name: fade;
+animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade 
+{
+from {opacity: .4} 
+to {opacity: 1}
+}
+
+@keyframes fade 
+{
+from {opacity: .4} 
+to {opacity: 1}
+}
+
+/*slideshow heading  styling*/
+.showheader h2
+{
+background-color: #457B9D;
+color:#F1FAEE;
+padding: 1.25rem;
+margin: 0;
+
+}
+
+.showheader h3
+{
+color: #457B9D;
+}
+
+.showheader p
+{
+padding: 1.1em 1.1em;
+}
+
+/* Footer styling */
+footer 
+{       
+background-color: #1d3557;
+color: #F1FAEE;
+font-size: 1.4rem; /*16px*/
+}
+
+footer ul
+{
+list-style-type: none; /*gets rid of bullet points*/
+margin: 0;
+}
+
+footer img
+{
+width: 5em;
+}
+
+footer p
+{
+padding-left: 0;
+font-size: 1em;
+}
+
+footer .row
+{
+padding-bottom: 0;
+}
+
+.underline-footer
+{
+background-color: #e63946;
+height: 0.5vh;
+margin-top: 22.5vh;
+}
+
+.list-heading
+{
+margin-bottom: 1em;
+font-size: 1.1em;
+}
+
+.list-subheading
+{
+margin-bottom: 0.5em;
+}
+
+ul#submenu li a
+{
+text-decoration: none;
+}
+
+/* Clear floats after the columns */
+.row:after 
+{       
+content: "";
+display: table;
+clear: both; 
+}
+
+.row , .column.column50
+{
+padding: 3em;
+}
+
+.row h1
+{
+font-size: 4rem;
+}
+
+/*floats all content inside to the left*/
+.column
+{
+float: left;
+}
+
+/* Used to create 17.5% width columns, used in footer*/
+.column17-5
+{
+width: 17.5%;
+}
+
+/* Used to create 30% width columns*/
+.column-30
+{
+width: 30%;
+}
+
+/* Used to create two columns in 3dprinters, home page*/
+.column50
+{      
+width: 50%; 
+}
+
+/* Used to create 25% width columns*/
+.column25
+{
+width: 25%;
+}
+
+/* Used to create 33.33% width columns*/
+.column30
+{
+width:33.33%;
+float:left;
+}
+
+/*used to align text to center*/
+.center
+{
+text-align: center;
+}
+
+/*used to style the map in contact page*/
+#column-contact
+{
+padding-top: 0;
+}
+
+/*used to style the form in contact page*/
+#contact-us table tbody tr td
+{
+width: 50%;
+height: 10vh;
+font-weight: bold;
+color: #000000;
+font-size: 1.3rem;
+}
+
+#contact-us
+{
+width: 100%;
+}
+
+#contact-us table 
+{
+width: 100%;
+}
+
+#contact-us input 
+{
+width: 20vw;
+height: 4vh;
+font-size: 1.1em;
+}
+
+/*submit button styling*/
+#contact-us input[type="submit"] 
+{
+font-size: 1.1rem;
+background-color: #E63946;
+margin: 0 auto;
+border: none;
+color: #F1FAEE;
+transition-duration: 0.4s;
+width: 25%;
+}
+
+#contact-us input[type="submit"]:hover
+{
+background-color: #c4212e;
+}
+
+/*submit button for email on orderconfirmed page*/
+.email-button
+{
+font-size: 1rem;
+background-color: #E63946;
+padding: 1em;
+border: none;
+margin: 0 auto;
+margin-top: 1em;
+margin-bottom: 1em;
+color: #F1FAEE;
+width: 10vw;
+transition-duration: 0.4s;
+}
+
+.email-button:hover 
+{ 
+background-color: #c4212e;
+}
+
+.email-order
+{
+padding: 1em 1em;
+font-size: 1rem;
+border: none;
+width: 20vw;
+margin: 0 auto;
+margin-top: 1em;
+}
+
+
+/*newsletter styling*/
+.background-color
+{
+background-color:#457B9D;  
+}
+
+.row.background-color
+{
+
+padding-top: 0;
+padding-bottom: 0;
+}
+
+#newsletter-form
+{
+max-width: 50%;
+}
+
+.newsletter-label  
+{
+
+color: #F1FAEE;
+font-size: 0.8rem;
+text-align: center;
+margin: 1.875em 0;
+}
+
+.newsletter-text h2
+{
+font-size: 3em;
+color: #F1FAEE;
+}
+
+.newsletter-text p 
+{
+padding: 0;
+color: #F1FAEE;
+}
+
+.newsletter-input
+{
+margin-top: 3.75em;
+}
+
+/*subscribe button for newletters styling*/
+.subscribe-button
+{
+font-size: 1rem;
+background-color: #E63946;
+padding: 1em;
+border: none;
+margin-top: 1em;
+margin-bottom: 1em;
+color: #F1FAEE;
+width: 50%;
+transition-duration: 0.4s;
+}
+
+.subscribe-button:hover
+{
+background-color: #c4212e;
+}
+
+/*label checkbox styling*/
+.checkbox
+{
+margin: 1.1em 0;
+}
+
+/*email input box for newsletter styling*/
+.email
+{
+padding: 1em 1em;
+font-size: 1rem;
+border: none;
+width: 100%;
+}
+
+/*There is one ID targeting the <nav> tag, <ul> tag, <li> tag sand the <a> tags:
+1.	#mainmenu – the background colour of the nav bar is set to light blue colour #457b9d
+2.	#mainmenu ul – the bullet points are removed for a cleaner look, 
+margin is removed so that there is no left-indentation across all browser and padding is set to 18.6px (1.1625em) to fill the nav bar.
+3.	#mainmenu ul li – content inside the nav bar is forced into one line to create a horizontal bar.
+4.	#mainmenu ul li a – text underline is removed, 
+the text within is spread out using padding of 14px (0.85em) for top/bottom and 48px (3em) for left/right,
+font-size is set to 23px (1.4rem) and an animation is added that displays navy colour (#1d3557) in a timeframe of 0.3 seconds.
+5.	#mainmenu ul li a: hover – when hovering over the nav links,
+the navy colour (#1d3557) is used to identify what nav link the user is hovering over.
+*/
+
+/*navigation styling*/
+#mainmenu
+{
+background-color: #457B9D;
+
+}
+
+#mainmenu ul
+{
+list-style-type: none;/*gets rid of bullet points*/
+margin: 0; /*remove left-indentation across all browsers*/
+padding: 1.1625em;
+}
+
+#mainmenu ul li
+{
+display: inline;  /*forces content into one line*/
+
+}
+
+#mainmenu ul li a
+{
+text-decoration: none;
+padding: 0.85em 3em;
+background-color: #457B9D;
+color: #F1FAEE;
+font-size: 1.4rem;
+transition: background-color 0.3s ease;
+}
+
+#mainmenu ul li a:hover
+{
+background-color: #1D3557;
+}
+
+
+/*MOBILE RESPONSIVE DESIGN*/
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other when the display
+is less than 600px*/
+@media (max-width: 600px)
+{ 
+#banner
+{
+padding: 0.5em; 
+}
+
+#bodycontainer h3, p {
+font-size: 0.5rem;
+}
+
+.row, .column.column50 {
+padding: 1em 2em 1em 2em;
+width: 100%;
+}
+
+.icon-help
+{
+width: 8vw;
+}
+
+.icon-trust 
+{
+width: 8vw;
+}
+
+iframe {
+width: 80%;
+height: 30vh;
+border: none;
+margin: 1em auto;
+}
+.dot {
+height: 5px;
+width: 5px;
+margin: 1% 1% 0 0;
+background-color: #bbbbbb;
+border-radius: 30%;
+display: inline-block;
+transition: background-color 0.6s ease;
+}
+
+.column, p {
+padding: 0;
+
+}
+
+.showheader h2 {
+background-color: #457B9D;
+color: #F1FAEE;
+padding: 1em;
+margin: 0;
+font-size: 0.2rem;
+}
+
+
+
+
+.inspire
+{
+font-size: 0.6em;
+}
+
+#banner h1
+{
+font-size: 1.1em;
+text-align: center;
+}
+
+#mainmenu ul 
+{
+padding: 0.5em;
+}
+
+#mainmenu ul li a
+{
+font-size: 0.5em;
+padding: 1.55em 1em 1em 1em;
+}
+
+header h1
+{
+font-size: 8vw;
+}
+
+.logo
+{
+width: 10vw;
+
+}
+
+.button {
+font-size: 0.5rem;
+
+}
+
+.background-image h2
+{
+
+font-size: 1em;
+padding: 1rem;
+margin: 15vh auto;
+}
+
+/*Newletter*/
+.newsletter-text h2 {
+font-size: 1em;
+}
+
+.email {
+font-size: 0.5rem;
+height: 1vh;
+}
+
+.subscribe-button
+{
+font-size: 0.5rem;
+padding: 0.5em;
+width: 20vw;
+height: 4vh;
+}
+
+.newsletter-label {
+
+font-size: 0.5rem;
+
+}
+
+.newsletter-input {
+margin-top: 0;
+}
+
+footer img {
+width: 10vw;
+}
+
+
+footer
+{
+font-size: 0.5rem;
+}
+
+
+
+.list-heading {
+
+
+font-size: 1em;
+
+}
+
+.row h1 {
+font-size: 1rem;
+}
+
+#bodycontainer {
+margin: 2em auto;
+margin-bottom: 0;
+}
+
+.column-30 {
+width: 15%;
+}
+
+.column30 {
+width: 100%;
+float: left;
+}
+
+#contact-us table tbody tr td {
+
+font-size: 0.5rem;
+}
+
+#contact-us input {
+width: 40vw;
+height: 4vh;
+font-size: 0.5em;
+}
+
+#contact-us input[type="submit"] {
+font-size: 0.5rem;
+
+}
+
+#bodycontainer-about-us {
+margin: 1em 0.5em;
+}
+
+.checkout-img {
+margin: 0 auto;
+height: 30vh;
+width: 60vw;
+}
+
+.order-button {
+font-size: 0.5rem;
+background-color: #E63946;
+border-radius: 2em;
+border: none;
+padding: 0.5em 0.5em;
+color: #F1FAEE;
+margin-top: 3em;
+width: 15%;
+transition-duration: 0.4s;
+text-align: center;
+text-decoration: none;
+margin: 0 auto;
+display: block;
+
+}
+
+.email-order {
+padding: 0.5em;
+font-size: 0.5rem;
+border: none;
+width: 25vw;
+margin: 0 auto;
+margin-top: 1em;
+}
+
+.email-button {
+font-size: 0.5rem;
+background-color: #E63946;
+padding: 0.5em;
+border: none;
+margin: 0 auto;
+margin-top: 1em;
+margin-bottom: 1em;
+color: #F1FAEE;
+width: 15vw;
+transition-duration: 0.4s;
+}
+
+h4 {
+font-size: 0.5em;
+}
+} 
+
